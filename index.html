@@ -4,10 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Inicio</title>
+    <title>Prueba de Fork</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>HOLA A VER SI FUNCIONO</h1>
-    <button>Press here to explode the world</button>
+<section class = "primer-bloque">
+    <h1>Ingresa tu nombre</h1>
+    <div id = botones >
+        <button id="boton2" onclick = "getValue()">Enviar</button>
+        <input type = "text" id = "name"  placeholder = "ingresa tu nombre" value = "" />
+        <p id = "mensaje bienvenida" > </p>
+
+      </div>
+  
+    <div id="mailBox">
+        <h2>Ingresa tu correo:</h2>
+        <input type="text" id="mail">
+        <button onclick="sendMail()" id="btnMail">Enviar</button>
+    </div>
+        <script>
+         
+           function getValue(){
+               var mensaje = document.getElementById("mensaje bienvenida");
+               var userName = document.getElementById("name"). value;
+               mensaje.innerHTML= "Bienvenida " + userName;
+           }
+
+      </script>
+</section>
 </body>
 </html>
